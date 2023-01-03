@@ -23,7 +23,7 @@ const Login = () => {
 						email: userAuth.user.email,
 						uid: userAuth.user.uid,
 						displayName: userAuth.user.displayName,
-						profileUrl: userAuth.user.photoURL,
+						photoUrl: userAuth.user.photoURL,
 					})
 				);
 			})

@@ -22,7 +22,7 @@ const Sidebar = () => {
 					src='https://images.unsplash.com/photo-1666739651802-1d8456958a6c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1160&q=80'
 					alt=''
 				/>
-				<Avatar className='sidebar__avatar' />
+				<Avatar src={user.photoUrl} className='sidebar__avatar'>{user.email[0].toUpperCase()}</Avatar>
 				<h2>{user.displayName}</h2>
 				<h4>{user.email}</h4>
 			</div>

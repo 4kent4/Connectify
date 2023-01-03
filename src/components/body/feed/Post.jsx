@@ -5,9 +5,11 @@ import ChatOutlinedIcon from '@mui/icons-material/ChatOutlined';
 import ShareOutlinedIcon from '@mui/icons-material/ShareOutlined';
 import SendOutlinedIcon from '@mui/icons-material/SendOutlined';
 import InputOption from './InputOption';
-const Post = ({ name, description, message, photoUrl }) => {
+import { forwardRef } from 'react';
+
+const Post = forwardRef(({ name, description, message, photoUrl }, ref) => {
 	return (
-		<div className='post'>
+		<div ref={ref} className='post'>
 			<div className='post__header'>
 				<Avatar src={photoUrl}>{name[0].toUpperCase()}</Avatar>
 
@@ -28,5 +30,5 @@ const Post = ({ name, description, message, photoUrl }) => {
 			</div>
 		</div>
 	);
-};
+});
 export default Post;
